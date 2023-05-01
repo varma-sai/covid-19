@@ -1,0 +1,10 @@
+// 875px
+$mediumScreen: 54.6875em;
+.Header {
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 12rem;
+    @media screen and (max-width: $mediumScreen) {
+        height: 100vh;
+    }
+}

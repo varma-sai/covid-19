@@ -1,0 +1,21 @@
+// 875px
+$mediumScreen: 54.6875em;
+.links {
+    display: flex;
+    gap: 2rem;
+    .link {
+        list-style: none;
+        text-decoration: none;
+        position: relative;
+
+        &:hover::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 0.175rem;
+            background-color: white;
+            left: 0;
+            bottom: -4px;
+        }
+    }
+}
