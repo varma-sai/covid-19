@@ -16,7 +16,7 @@ $mediumScreen: 54.6875em;
     }
     .links {
         display: flex;
-        color: #000;
+        // display: none;
         gap: 2rem;
         @media screen and(max-width: $mediumScreen) {
             display: none;
@@ -47,12 +47,9 @@ $mediumScreen: 54.6875em;
         margin-left: -50vw;
         left: 50%;
         position: fixed;
-        height: 100vh;
-        // height: 100%;
         width: 100vw;
         top: 0;
-        // stackoverflow ⬆ code
-        background-color: #000;
+        background-color: #FFC417;
         display: flex;
         border: 5x solid red;
         flex-direction: column;

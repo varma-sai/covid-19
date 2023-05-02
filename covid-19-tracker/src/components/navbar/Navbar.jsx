@@ -10,22 +10,18 @@ import Logo from "./../logo/Logo";
 function NavLinks(props) {
   return (
     <>
-      {/* <div className="links "> */}
       <div className={props.css}>
-        <Link className="link" to="/about">
-          About
+        <Link className="link" to="/">
+          Home
         </Link>
-        <Link className="link" to="/careers">
-          Careers
+        <Link className="link" to="/worldWide">
+          Worldwide
         </Link>
-        <Link className="link" to="/events">
-          Events
+        <Link className="link" to="/symptoms">
+          Symptoms
         </Link>
-        <Link className="link" to="/products">
-          Products
-        </Link>
-        <Link className="link" to="/support">
-          Support
+        <Link className="link" to="/needHelp">
+          Need Help
         </Link>
       </div>
     </>
@@ -33,6 +29,7 @@ function NavLinks(props) {
 }
 //  navLinks End
 
+//
 class Toggle extends React.Component {
   constructor(props) {
     super(props);
@@ -50,9 +47,6 @@ class Toggle extends React.Component {
 
   render() {
     return (
-      // <button onClick={this.handleClick}>
-      //   {this.state.isToggleOn ? "ON" : "OFF"}
-      // </button>
       <div onClick={this.handleClick}>
         <div className="menu">
           {this.state.isToggleOn ? (
@@ -64,6 +58,7 @@ class Toggle extends React.Component {
                 <img className="close-img" src={closeLogo} alt="Menu" />
               </div>
               <NavLinks css="menuLinks" />
+              {/* <h1> Heading 2</h1> */}
             </div>
           )}
         </div>

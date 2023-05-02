@@ -35,9 +35,6 @@ function Footer() {
     <div>
       <div className="Footer">
         <div className="Footer-left-section">
-          <div className="navba">
-            <Navbar navCss="links" />
-          </div>
         </div>
         <RightSection />
       </div>

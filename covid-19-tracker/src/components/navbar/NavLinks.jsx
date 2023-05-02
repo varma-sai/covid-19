@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import "./NavLinks.scss";
-
+// import { useState } from "react";
 function NavLinks(props) {
+  //   const [styleLink, styleMenu] = useState("links");
   return (
     <>
       {/* <div className="links"> */}

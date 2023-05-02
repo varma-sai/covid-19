@@ -1,33 +1,24 @@
 import "./App.scss";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import { Routes, Route, Link, BrowserRouter as Router } from "react-router-dom";
-// Importing NavLinks
-import About from "./components/navLinks/About";
-import Careers from "./components/navLinks/Careers";
-import Events from "./components/navLinks/Events";
-import Products from "./components/navLinks/Products";
-import Support from "./components/navLinks/Support";
-// components
-import Header from "./components/header/Header";
-import MainSection from "./components/mainSection/MainSection";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
 import Footer from "./components/footerSection/Footer";
+import Header from "./components/header/Header";
+import WorldWide from "./pages/WorldWide";
+import Symptoms from "./pages/Symptoms";
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Routes>
-          <Route path="/about" element={About} />
-          <Route path="/careers" element={Careers} />
-          <Route path="/events" element={Events} />
-          <Route path="/products" element={Products} />
-          <Route path="/support" element={Support} />
-        </Routes>
-        <Header />
-        <MainSection />
-        <Footer />
-      </Router>
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/worldWide" element={<WorldWide />} />
+        <Route path="/symptoms" element={<Symptoms />} />
+        <Route path="/needHelp" element={<ContactUs />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 

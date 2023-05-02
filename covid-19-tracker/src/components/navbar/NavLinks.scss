@@ -4,10 +4,14 @@ $mediumScreen: 54.6875em;
     display: flex;
     gap: 2rem;
     .link {
+        color: inherit;
         list-style: none;
         text-decoration: none;
         position: relative;
-
+        // border: 2px solid red;
+        @media screen and(max-width: $mediumScreen) {
+            // display: none;
+        }
         &:hover::after {
             content: "";
             position: absolute;
